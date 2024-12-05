@@ -16,6 +16,6 @@ jobs:
       windows-latest
     steps:
      - name: Shell
-     - shell: bash
+       shell: bash
        run: echo "Good bye - Runner OS is $RUNNER_OS"
      
