@@ -10,10 +10,10 @@ jobs:
     runs-on:
       ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - run: echo "Hello World - Runner OS is $RUNNER_OS"
   echo-say-good-bye:
     runs-on:
       windows-latest
     steps:
-     - run: echo "Good bye"
+     - run: echo "Good bye - Runner OS is $RUNNER_OS"
      
