@@ -1,7 +1,9 @@
 name: 1- Building the workflow
 
 on: 
- push
+ push:
+ workflow_dispatch: 
+ 
 
 jobs:
   echo-hello-world:
