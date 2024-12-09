@@ -11,5 +11,6 @@ jobs:
  echo-issues:
   runs-on: ubuntu- latest
   steps:
-   - run : echo "Run whenever issue with opened status"
+   - run : echo "Run whenever issue with opened status
+   
    
