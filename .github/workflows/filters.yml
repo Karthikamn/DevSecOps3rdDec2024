@@ -1,0 +1,15 @@
+name: Filters 
+
+on:
+ issues:
+  types:
+   - opened
+  branches:
+   - master
+
+jobs:
+ echo-issues:
+  runs-on: ubuntu- latest
+  steps:
+   - run : echo "Run whenever issue with opened status"
+   
