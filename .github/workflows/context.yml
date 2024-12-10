@@ -15,16 +15,16 @@ jobs:
   steps:
    - name: Display the info
      env:
-       MY_VAR: "steps"
+        MY_VAR: "steps"
      run: |
-      echo "Event name ${{github.event_name}}"
-      echo "SHA  value ${{github.sha}}"
-      echo "Ref value ${{github.ref}}"
-      echo "Actor ${{github.actor}}"
-      echo "Workflow ${{github.workflow}}"
-      echo "Runner name ${{github.run_number}}"
-      echo "Runner id ${{github.run_id}}"
-      echo "Print env value for the key ${{MY_VAR}}"
+       echo "Event name ${{github.event_name}}"
+       echo "SHA  value ${{github.sha}}"
+       echo "Ref value ${{github.ref}}"
+       echo "Actor ${{github.actor}}"
+       echo "Workflow ${{github.workflow}}"
+       echo "Runner name ${{github.run_number}}"
+       echo "Runner id ${{github.run_id}}"
+       echo "Print env value for the key ${{MY_VAR}}"
       
       
       
