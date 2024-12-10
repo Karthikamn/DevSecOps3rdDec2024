@@ -17,5 +17,5 @@ jobs:
     steps:
      - name: Shell
        shell: bash
-       run: echo "Good bye - Runner OS is $RUNNER_OS"
+       run: echo "${{vars.MY_VAR}}"
      
