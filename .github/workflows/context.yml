@@ -4,11 +4,18 @@ on:
  push:
  workflow_dispatch:
 
+env:
+ MY_VAR: "workflow"
+
 jobs:
  echo-context:
   runs-on: ubuntu-latest
+  env:
+   MY_VAR: "jobs"
   steps:
    - name: Display the info
+     env:
+      MY_VAR: "steps"
      run: |
       echo "Event name ${{github.event_name}}"
       echo "SHA  value ${{github.sha}}"
@@ -17,6 +24,7 @@ jobs:
       echo "Workflow ${{github.workflow}}"
       echo "Runner name ${{github.run_number}}"
       echo "Runner id ${{github.run_id}}"
+      echo "Print env value for the key ${{MY_VAR}}"
       
       
       
