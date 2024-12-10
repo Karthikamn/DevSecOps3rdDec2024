@@ -15,7 +15,7 @@ jobs:
   steps:
    - name: Display the info
      env:
-      MY_VAR: "steps"
+       MY_VAR: "steps"
      run: |
       echo "Event name ${{github.event_name}}"
       echo "SHA  value ${{github.sha}}"
