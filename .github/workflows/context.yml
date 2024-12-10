@@ -31,6 +31,7 @@ jobs:
        echo "Runner name ${{github.run_number}}"
        echo "Runner id ${{github.run_id}}"
        echo "Print env value for the key ${{env.MY_VAR}}"
+       echo "variables value is ${{vars.MY_VAR}}"
       
       
       
