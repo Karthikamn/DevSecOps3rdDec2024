@@ -16,5 +16,5 @@ jobs:
    - uses: actions/setup-node@v4.1.0
      with:
       node-version: ${{matrix.node-version}}
-   - name: Perform the ${{matrix.node-version}]
+   - name: Perform the ${{matrix.node-version}}
      run: echo "running the test on diff os and node version ${{matrix.os}} and ${{matrix.node-version}}"
