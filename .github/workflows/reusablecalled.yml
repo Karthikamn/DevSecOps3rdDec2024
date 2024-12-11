@@ -1,0 +1,11 @@
+name: Main workflow
+
+on:
+ push:
+  branches: master
+jobs:
+ use-reusable-workflow:
+  uses: ./.github/workflows/reusable.yml
+  with:
+    message: "Hello from main workflow"
+    
