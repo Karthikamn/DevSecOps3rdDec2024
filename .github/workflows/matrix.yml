@@ -4,7 +4,7 @@ on:
  workflow_dispatch:
 jobs:
  echo-matrix:
-  name: ${{matrix.os}} - $ {{matrix.node}}
+  name: ${{matrix.os}} - $ {{matrix.node-version}}
   runs-on: ${{matrix.os}}
   strategy:
    matrix:
