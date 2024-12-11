@@ -1,0 +1,20 @@
+name: Matrix
+
+on:
+ workflow_dispatch:
+jobs:
+ echo-matrix:
+  name: ${{matrix.os}} - $ {{matrix.node}}
+  runs-on: ${{matrix.os}}
+  strategy:
+   matrix:
+    node-version: [ v22.6.0,v21.7.3]
+    os: 
+     - ubuntu-latest
+     - windows-latest
+  steps:
+   - uses: actions/setup-node@v4.1.0
+     with:
+      node-version: ${{matrix.node-version}}
+   - name: Perform the ${{matrix.node-version}]
+     run: echo "running the test on diff os and node version ${{matrix.os}} and ${{matrix.node-version}}"
